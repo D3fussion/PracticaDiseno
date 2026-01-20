@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Ferretería Sánchez - Herramientas y Materiales de Construcción</title>
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Le agregue estas fuentes porque me gustan -->
@@ -14,6 +14,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Hind:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <meta name="description"
+        content="Nuestra tienda de herramientas se encarga de brindar herramientas de calidad a precios accesibles a todo Mexico.">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="author" content="Ferreteria Sanchez">
+    <meta name="keywords" content="Ferreteria, herramientas, precios accesibles, todo Mexico">
 </head>
 
 <body class="font-hind">
@@ -23,7 +28,7 @@
             <div class="logo">
                 <img class="logo-img"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjJWSwBu_BTLwke_oQpUP1zi3wKhWTaZIaJw&s"
-                    alt="Logo">
+                    alt="Logo Ferretería Sánchez">
                 <p>Ferreteria Sanchez</p>
             </div>
             <nav class="menu">
@@ -36,63 +41,103 @@
         </div>
     </header>
     <main class="main">
-        <div class="banner">
+        <section class="banner" aria-labelledby="banner-titulo">
             <div class="banner-black">
-                <h1 class="text-banner">Bienvenido a la Ferreteria Sanchez</h1>
+                <h1 id="banner-titulo" class="text-banner">Bienvenido a la Ferreteria Sanchez</h1>
             </div>
-        </div>
-        <div class="text-products">
-            <p>Productos Disponibles</p>
-        </div>
-        <div class="products">
-            <div class="product">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61fsIsm5p2L._AC_UF894,1000_QL80_.jpg" alt="Taladro">
-                </div>
-                <div class="product-text">
-                    <h3>Taladro</h3>
-                    <p>Descripción del taladro</p>
-                    <span>$10.00</span>
-                </div>
+        </section>
+
+        <section aria-labelledby="productos-destacados-titulo">
+            <div class="text-products">
+                <h2 id="productos-destacados-titulo">Productos Disponibles</h2>
             </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61CTt-OrpzL.jpg" alt="Martillo">
-                </div>
-                <div class="product-text">
-                    <h3>Martillo</h3>
-                    <p>Descripción del martillo</p>
-                    <span>$20.00</span>
-                </div>
+            <div class="products">
+                <article class="product" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="https://m.media-amazon.com/images/I/61fsIsm5p2L._AC_UF894,1000_QL80_.jpg"
+                            alt="Taladro" itemprop="image" loading="lazy">
+                    </div>
+                    <div class="product-text">
+                        <h3 itemprop="name">Taladro</h3>
+                        <p itemprop="description">Descripción del taladro</p>
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="MXN">
+                            <span itemprop="price" content="10.00">$10.00</span>
+                        </span>
+                    </div>
+                </article>
+                <article class="product" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="https://m.media-amazon.com/images/I/61CTt-OrpzL.jpg" alt="Martillo" itemprop="image"
+                            loading="lazy">
+                    </div>
+                    <div class="product-text">
+                        <h3 itemprop="name">Martillo</h3>
+                        <p itemprop="description">Descripción del martillo</p>
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="MXN">
+                            <span itemprop="price" content="20.00">$20.00</span>
+                        </span>
+                    </div>
+                </article>
+                <article class="product" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="https://m.media-amazon.com/images/I/41E7wzz3OTL.jpg" alt="Destornillador"
+                            itemprop="image" loading="lazy">
+                    </div>
+                    <div class="product-text">
+                        <h3 itemprop="name">Destornillador</h3>
+                        <p itemprop="description">Descripción del destornillador</p>
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="MXN">
+                            <span itemprop="price" content="30.00">$30.00</span>
+                        </span>
+                    </div>
+                </article>
+                <article class="product" itemscope itemtype="http://schema.org/Product">
+                    <div class="product-img">
+                        <img src="https://m.media-amazon.com/images/I/61CpYEsXf6L._AC_UF894,1000_QL80_.jpg"
+                            alt="Tijeras" itemprop="image" loading="lazy">
+                    </div>
+                    <div class="product-text">
+                        <h3 itemprop="name">Tijeras</h3>
+                        <p itemprop="description">Las tijeras son herramientas que se utilizan para cortar materiales
+                            como papel, cartulina,
+                            metal,
+                            etc.</p>
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="MXN">
+                            <span itemprop="price" content="10.00">$10.00</span>
+                        </span>
+                    </div>
+                </article>
             </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/41E7wzz3OTL.jpg" alt="Destornillador">
-                </div>
-                <div class="product-text">
-                    <h3>Destornillador</h3>
-                    <p>Descripción del destornillador</p>
-                    <span>$30.00</span>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61CpYEsXf6L._AC_UF894,1000_QL80_.jpg" alt="Tijeras">
-                </div>
-                <div class="product-text">
-                    <h3>Tijeras</h3>
-                    <p>Las tijeras son herramientas que se utilizan para cortar materiales como papel, cartulina,
-                        metal,
-                        etc.</p>
-                    <span>$10.00</span>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <p>Ferreteria Sanchez. Todos los derechos reservados.</p>
+        <address itemscope itemtype="http://schema.org/HardwareStore">
+            <strong itemprop="name">Ferreteria Sanchez</strong>. Todos los derechos reservados.
+        </address>
     </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HardwareStore",
+      "name": "Ferretería Sánchez",
+      "description": "Tienda de herramientas de calidad a precios accesibles en México",
+      "telephone": "+52-55-1234-5678",
+      "email": "ferreteriasanchez@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle 123, Colonia 456",
+        "postalCode": "76000",
+        "addressCountry": "MX"
+      },
+      "url": "https://www.ferreteriasanchez.com"
+    }
+    </script>
 
 </body>
 
