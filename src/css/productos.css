@@ -55,7 +55,7 @@
 
 @media (min-width: 640px) {
     .product-img {
-        height: 70%;
+        height: 60%;
     }
 }
 
@@ -90,8 +90,8 @@
 
 @media (min-width: 1024px) {
     .product-text p {
-        -webkit-line-clamp: 3;
-        line-clamp: 3;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
     }
 }
 
